@@ -42,9 +42,7 @@ unable to start services for VMware tools
 
 经百度后，发现VMware安装虚拟机时没有设置共享文件夹，遂进行设置![](/assets/设置共享文件夹.png)再次重启虚拟机，执行_/etc/vmware-tools/services.sh start_，仍报错Blocking file system: \[FAILED\]，经查，需安装fuse-libs，执行
 
-_yum install -y fuse-libs_
-
-
+_yum install -y fuse-libs，_再次重新启动vmware-tools，然而好像并没啥用。再重新安装_sudo  ./vmware-install.pl_
 
 6、安装完毕则手动重启虚拟机
 
