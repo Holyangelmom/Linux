@@ -46,9 +46,35 @@ unable to start services for VMware tools
 
 再次重启虚拟机，执行_/etc/vmware-tools/services.sh start_，仍报错Blocking file system: \[FAILED\]，经查，需安装fuse-libs，执行
 
-_yum install -y fuse-libs，_再次重新启动vmware-tools，然而好像并没啥用。再重新安装_sudo  ./vmware-install.pl，_这次成功了。但系由于虚拟机是minimal版本
+_yum install -y fuse-libs，_再次重新启动vmware-tools，然而好像并没啥用。再重新安装_sudo  ./vmware-install.pl，_这次成功了。查看共享文件夹
+
+![](/assets/查看共享文件夹.png)
+
+但系由于虚拟机是minimal版本，似乎只能使用VMware-tools共享文件夹的功能。
 
 6、安装完毕则手动重启虚拟机
 
 7、在虚拟机菜单栏上选择“查看”-&gt;“立即适应客户机”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
