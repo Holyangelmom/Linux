@@ -50,7 +50,7 @@ _yum install -y fuse-libs，_再次重新启动vmware-tools，然而好像并没
 
 ![](/assets/查看共享文件夹.png)
 
-**但系由于虚拟机是minimal版本，似乎只能使用VMware-tool的共享文件夹的功能**。
+**但系由于虚拟机是minimal版本，似乎只能使用VMware-tool的共享文件夹的功能**。X window的虚拟机则继续进行设置。
 
 6、安装完毕则手动重启虚拟机
 
