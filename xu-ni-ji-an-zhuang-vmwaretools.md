@@ -32,7 +32,7 @@ _sudo  ./vmware-install.pl_
 
 但有可能出现如下问题：
 
-initctl:job failed to start 
+initctl:job failed to start
 
 unable to start services for VMware tools
 
