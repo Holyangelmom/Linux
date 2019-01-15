@@ -20,5 +20,11 @@ _mount /dec/cdrom /media_
 
 解决：mount -o remount,rw /dev/sr0 /media
 
-4、
+4、拷贝至其他目录并解压
+
+cp VMwareTools-\*\*\*\*\*.tar.gz /home/panaidan
+
+tar -xvf VMwareTools-\*\*\*\*\*.tar.gz
+
+
 
