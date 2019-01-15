@@ -28,7 +28,23 @@ _tar -xvf VMwareTools-\*\*\*\*\*.tar.gz_
 
 5、进入解压后目录执行，并一路回车即可
 
-_sudo  ./vmware-install.pl_
+_sudo  ./vmware-install.pl_
+
+但有可能出现如下问题：
+
+initctl:job failed to start 
+
+unable to start services for VMware tools
+
+先执行_/etc/vmware-tools/services.sh start_，可以看到
+
+![](file:///C:\Users\Administrator\AppData\Roaming\Tencent\Users\2291385052\QQ\WinTemp\RichOle\9F[1V1Z%QUY%29$YYQF9RT1`T.png)
+
+经百度后，发现VMware安装虚拟机时没有设置共享文件夹，遂进行设置![](/assets/设置共享文件夹.png)再次重启虚拟机，执行_/etc/vmware-tools/services.sh start_，仍报错Blocking file system: \[FAILED\]，经查，需安装fuse-libs，执行
+
+_yum install -y fuse-libs_
+
+
 
 6、安装完毕则手动重启虚拟机
 
