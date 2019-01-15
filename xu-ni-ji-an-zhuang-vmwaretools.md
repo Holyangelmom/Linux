@@ -18,13 +18,19 @@ _mount /dec/cdrom /media_
 
 若挂载时报错：mount: block device /dev/sr0 is write-protected,mounting read-only，说明此时/dev/sr0（虚拟硬盘）为写保护。
 
-解决：mount -o remount,rw /dev/sr0 /media
+解决：_mount -o remount,rw /dev/sr0 /media_
 
 4、拷贝至其他目录并解压
 
-cp VMwareTools-\*\*\*\*\*.tar.gz /home/panaidan
+_cp VMwareTools-\*\*\*\*\*.tar.gz /home/panaidan_
 
-tar -xvf VMwareTools-\*\*\*\*\*.tar.gz
+_tar -xvf VMwareTools-\*\*\*\*\*.tar.gz_
 
+5、进入解压后目录执行，并一路回车即可
 
+_sudo  ./vmware-install.pl_
+
+6、安装完毕则手动重启虚拟机
+
+7、在虚拟机菜单栏上选择“查看”-&gt;“立即适应客户机”
 
