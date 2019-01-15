@@ -12,7 +12,13 @@ _yum install -y gcc_
 
 _yum install -y kernel-headers_
 
-3、点击VM工具栏中“虚拟机”-&gt;"安装VMware Tools"。
+3、点击VM工具栏中“虚拟机”-&gt;"安装VMware Tools"，这时会自动挂载安装镜像，若没有自动挂载，则手动挂载
 
+_mount /dec/cdrom /media_
 
+若挂载时报错：mount: block device /dev/sr0 is write-protected,mounting read-only，说明此时/dev/sr0（虚拟硬盘）为写保护。
+
+解决：mount -o remount,rw /dev/sr0 /media
+
+4、
 
