@@ -2,15 +2,17 @@
 
 1、启动虚拟机
 
-2、点击VM工具栏中“虚拟机”-&gt;"安装VMware Tools"。
+2、若虚拟机是minimal版本，则需安装几个依赖
 
-3、若虚拟机是minimal版本，则需安装几个依赖
+_yum install -y perl_
 
-yum install -y perl
+_yum install -y net-tools_
 
-yum install -y net-tools
+_yum install -y gcc_
 
-yum install -y gcc
+_yum install -y kernel-headers_
 
-yum install -y kernel-headers
+3、点击VM工具栏中“虚拟机”-&gt;"安装VMware Tools"。
+
+
 
