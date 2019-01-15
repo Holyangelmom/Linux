@@ -18,3 +18,7 @@ _cat /etc/issue_
 
 ![](/assets/查看发行版信息.png)
 
+4、查看CPU信息
+
+_cat /proc/cpuinfo_![](/assets/查看CPU信息.png)
+
