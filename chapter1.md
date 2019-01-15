@@ -12,3 +12,9 @@ _cat /proc/version_
 
 ![](/assets/查看版本信息.png)
 
+3、查看发行版信息
+
+_cat /etc/issue_
+
+![](/assets/查看发行版信息.png)
+
