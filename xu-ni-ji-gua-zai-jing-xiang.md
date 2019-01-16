@@ -8,3 +8,5 @@ _sudo mount /dev/sr0 /mnt/cdrom_
 
 /mnt/cdrom是自己手动建的目录
 
+
+
