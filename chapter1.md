@@ -22,3 +22,33 @@ _cat /etc/issue_
 
 _cat /proc/cpuinfo_![](/assets/查看CPU信息.png)
 
+5、改变属性与权限
+
+chgrp \[-R\] 组名 dirname/filename
+
+chown \[-R\] 账户名 dirname/filename
+
+chmod \[-R\] +rwx/xyz dirname/filename xyz为读写执行所代表的数字
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
