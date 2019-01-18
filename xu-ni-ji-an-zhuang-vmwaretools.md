@@ -1,8 +1,8 @@
-虚拟机安装VMwareTools
+# 虚拟机安装VMwareTools
 
-1、启动虚拟机
+### 1、启动虚拟机
 
-2、若虚拟机是minimal版本，则需安装几个依赖
+### 2、若虚拟机是minimal版本，则需安装几个依赖
 
 _yum install -y perl_
 
@@ -12,7 +12,7 @@ _yum install -y gcc_
 
 _yum install -y kernel-headers_
 
-3、点击VM工具栏中“虚拟机”-&gt;"安装VMware Tools"，这时会自动挂载安装镜像，若没有自动挂载，则手动挂载
+### 3、点击VM工具栏中“虚拟机”-&gt;"安装VMware Tools"，这时会自动挂载安装镜像，若没有自动挂载，则手动挂载
 
 _mount /dec/cdrom /media_
 
@@ -20,13 +20,13 @@ _mount /dec/cdrom /media_
 
 解决：_mount -o remount,rw /dev/sr0 /media_
 
-4、拷贝至其他目录并解压
+### 4、拷贝至其他目录并解压
 
 _cp VMwareTools-\*\*\*\*\*.tar.gz /home/panaidan_
 
 _tar -xvf VMwareTools-\*\*\*\*\*.tar.gz_
 
-5、进入解压后目录执行，并一路回车即可
+### 5、进入解压后目录执行，并一路回车即可
 
 _sudo  ./vmware-install.pl_
 
@@ -52,5 +52,7 @@ _yum install -y fuse-libs，_再次重新启动vmware-tools，然而好像并没
 
 **但系由于虚拟机是minimal版本，似乎只能使用VMware-tool的共享文件夹的功能**。X window的虚拟机则继续进行设置。
 
-6、在虚拟机菜单栏上选择“查看”-&gt;“立即适应客户机”
+### 6、在虚拟机菜单栏上选择“查看”-&gt;“立即适应客户机”
+
+
 
