@@ -28,27 +28,5 @@ chgrp \[-R\] 组名 dirname/filename
 
 chown \[-R\] 账户名 dirname/filename
 
-chmod \[-R\] +rwx/xyz dirname/filename xyz为读写执行所代表的数字
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+chmod \[-R\] \(+/-/=\)rwx/xyz dirname/filename xyz为读写执行所代表的数字
 
