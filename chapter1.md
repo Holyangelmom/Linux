@@ -28,5 +28,15 @@ chgrp \[-R\] 组名 dirname/filename
 
 chown \[-R\] 账户名 dirname/filename
 
-chmod \[-R\] \(+/-/=\)rwx/xyz dirname/filename xyz为读写执行所代表的数字
+chmod \[-R\] 权限操作 dirname/filename，其中权限操作有以下两种
+
+（1）数字类型改变文件权限
+
+chmod \[-R\] xyz dirname/filename xyz代表文档拥有者、群组、其他人的读写执行的权限数字总和，读写执行的权限分别为4/2/1。
+
+![](/assets/数字类型权限.png)
+
+（2）符号类型改变文件权限
+
+![](/assets/符号类型权限.png)![](/assets/符号类型权限使用已.png)![](/assets/符号类型权限使用二.png)
 
