@@ -12,7 +12,21 @@
 
 #### 2、根目录（1）的意义和内容
 
+![](/assets/FSH对于根目录的建议.png)![](/assets/FHS建议根目录的次目录.png)
 
+![](/assets/FHS建议根目录的次目录2.png)
+
+![](/assets/FHS建议根目录的次目录3.png)
+
+![](/assets/FHS建议根目录的次目录4.png)
+
+![](/assets/FHS建议根目录的次目录5.png)
+
+#### 3、/usr的意义和内容
+
+![](/assets/usr次目录.png)
+
+![](/assets/usr次目录2.png)
 
 
 
