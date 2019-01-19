@@ -6,4 +6,5 @@
 * [虚拟机挂载安装时所用的ISO镜像](xu-ni-ji-gua-zai-jing-xiang.md)
 * [Linux目录配置](linuxmu-lu-pei-zhi.md)
   * [1.Filesystem Hierarchy Standard](linuxmu-lu-pei-zhi/1filesystem-hierarchy-standard.md)
+  * [2.目录树](linuxmu-lu-pei-zhi/2mu-lu-shu.md)
 
