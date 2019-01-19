@@ -28,5 +28,7 @@
 
 ![](/assets/usr次目录2.png)
 
+#### 4、/var的意义和内容
 
+![](/assets/var的次目录.png)
 
