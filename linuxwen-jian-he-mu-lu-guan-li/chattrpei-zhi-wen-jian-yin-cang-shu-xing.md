@@ -6,3 +6,13 @@
 
 ![](/assets/chattr指令usage.png)
 
+![](/assets/chattr指令usage2.png)
+
+### 2、lsattr显示文档隐藏属性
+
+![](/assets/lsattr指令usage.png)
+
+
+
+
+
