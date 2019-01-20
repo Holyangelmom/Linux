@@ -10,4 +10,5 @@
 * [Linux文件和目录管理](linuxwen-jian-he-mu-lu-guan-li.md)
   * [1.文件隐藏属性（chattr/lsattr）](linuxwen-jian-he-mu-lu-guan-li/chattrpei-zhi-wen-jian-yin-cang-shu-xing.md)
   * [2.文件特殊权限： SUID, SGID, SBIT](linuxwen-jian-he-mu-lu-guan-li/2wen-jian-te-shu-quan-xian-ff1a-suid-sgid-sbit.md)
+  * [3.文件查找](linuxwen-jian-he-mu-lu-guan-li/3wen-jian-cha-zhao.md)
 
