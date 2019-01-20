@@ -22,3 +22,5 @@ locate从已建立的数据库 /var/lib/mlocate/文件中查找文件，但数�
 
 ![](/assets/locate usage.png)
 
+
+
