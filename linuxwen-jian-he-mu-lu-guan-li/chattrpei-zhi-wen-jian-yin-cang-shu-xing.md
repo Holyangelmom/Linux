@@ -1,4 +1,13 @@
-# 文件隐藏属性
+# 文件隐藏属性（chattr/lsattr）
+
+## 目录
+
+1. ##### chattr配置文件隐藏属性
+2. ##### lsattr显示文档隐藏属性
+
+
+
+
 
 ### 1、chattr配置文件隐藏属性
 
@@ -11,8 +20,4 @@
 ### 2、lsattr显示文档隐藏属性
 
 ![](/assets/lsattr指令usage.png)
-
-
-
-
 
