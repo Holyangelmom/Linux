@@ -8,6 +8,8 @@
 
 3. SBIT
 
+4. SUID/SGID/SBIT 权限设定
+
 ### 1、SUID
 
 当 s 标志出现在文件owner的 x 项目时，例如 /usr/bin/passwd文件的权限状态为：『-rwsr-xr-x』，此时就被称为 Set UID，简称为 SUID 的特殊权限。基本上 SUID**仅仅对文件** 有这样的限制与功能：
@@ -64,4 +66,18 @@ Sticky Bit, 简称SBIT， 目前只针对目录有效，对于文件已经没有
 5. 会发现报错
 
 ![](/assets/SBIT测试.png)
+
+### 4、SUID/SGID/SBIT 权限设定
+
+SUID/SGID/SBIT的权限分别为：
+
+* **4 为 SUID  **
+* **2 为 SGID  **
+* **1 为 SBIT**
+
+uasage：
+
+![](/assets/特殊权限设定.png)
+
+最后一个操作执行后特殊权限都是大写，是因为user, group 以及others 都没有 x 这个可执行的标志\( 因为 666 嘛 \)，所以，这个 S, T 代表的就是『空的』啦！除了用数字更改权限，还可以用符号法修改。
 
