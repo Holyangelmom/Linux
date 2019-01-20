@@ -16,3 +16,9 @@ whereis只会查找特定目录中的文件，特定目录可以用whereis -l查
 
 ![](/assets/whereis用例.png)
 
+### 3、locate查找数据库中的文件
+
+locate从已建立的数据库 /var/lib/mlocate/文件中查找文件，但数据库并不是实时更新，若有新文件刚刚被创建，因此需要_sudo updatedb_更新数据库。
+
+![](/assets/locate usage.png)
+
