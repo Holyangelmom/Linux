@@ -7,7 +7,9 @@
 * 本权限仅在执行该程序的过程中有效 \(run-time\)；
 * 执行者将具有该程序拥有者 \(owner\) 的权限
 
-![](/assets/SUID程序执行过工程.png)
+![](/assets/SUID程序执行过程.png)
 
-另外，SUID 仅可用在 binary program 上， 不能够用在 shell script 上面！这是因为 shell script 只是将很多的 binary 执行档叫进来执行而已！所以 SUID 的权限部分，还是得要看 shell script 呼叫进来的程序的设定， 而不是 shell script 本身。当然，SUID 对于目录也是无效的～这点要特别留意。
+另外，SUID 仅可用在 binary program 上， 不能够用在 shell script 上面！这是因为 shell script 只是  
+将很多的 binary 执行档叫进来执行而已！所以 SUID 的权限部分，还是得要看 shell script 呼叫进  
+来的程序的设定， 而不是 shell script 本身。当然，SUID 对于目录也是无效的～这点要特别留意。
 
