@@ -9,7 +9,5 @@
 
 ![](/assets/SUID程序执行过程.png)
 
-另外，SUID 仅可用在 binary program 上， 不能够用在 shell script 上面！这是因为 shell script 只是  
-将很多的 binary 执行档叫进来执行而已！所以 SUID 的权限部分，还是得要看 shell script 呼叫进  
-来的程序的设定， 而不是 shell script 本身。当然，SUID 对于目录也是无效的～这点要特别留意。
+另外，SUID 仅可用在 binary program 上， 不能够用在 shell script 上面！这是因为 shell script 只是将很多的 binary 执行档叫进来执行而已！所以 SUID 的权限部分，还是得要看 shell script 呼叫进来的程序的设定， 而不是 shell script 本身。当然，SUID 对于目录也是无效的～这点要特别留意。
 
