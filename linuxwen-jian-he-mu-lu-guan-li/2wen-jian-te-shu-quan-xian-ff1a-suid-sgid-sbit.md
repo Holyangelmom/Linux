@@ -1,14 +1,10 @@
-### 
+# 文件特殊权限： SUID, SGID, SBIT
 
 ## 目录
 
 1. ##### SUID
 2. ##### SGID
 3. ##### SBIT
-
-
-
-
 
 ### 1、SUID
 
