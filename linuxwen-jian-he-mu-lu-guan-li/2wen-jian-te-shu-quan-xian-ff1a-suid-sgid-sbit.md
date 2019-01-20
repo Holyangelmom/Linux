@@ -71,9 +71,9 @@ Sticky Bit, 简称SBIT， 目前只针对目录有效，对于文件已经没有
 
 SUID/SGID/SBIT的权限分别为：
 
-* **4 为 SUID  **
-* **2 为 SGID  **
-* **1 为 SBIT**
+* 4为 SUID
+* 2为 SGID
+* 1为 SBIT
 
 uasage：
 
