@@ -36,9 +36,7 @@ _find /var -mtime -4_
 
 _find /var -mtime +4_
 
-_find /var -mtime 4_
+_find /var -mtime 4_
 
 _find /etc -newer /etc/passwd_
-
-
 
