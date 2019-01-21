@@ -62,6 +62,8 @@ _find /var -type s_
 
 _find /usr/bin /usr/sbin -perm /6000_
 
+_find /etc -size +50k -a -size -60k -exec ls -l {} \;_
+
 _find /usr/bin /usr/sbin -perm /7000 -exec ls -l {} \;_
 
 find 的特殊功能就是能够进行额外的动作\(action\)。我们将最后一个例子以图解来说明如下：
