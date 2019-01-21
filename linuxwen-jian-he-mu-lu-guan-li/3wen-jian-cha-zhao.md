@@ -62,7 +62,7 @@ _find /var -type s_
 
 _find /usr/bin /usr/sbin -perm /6000_
 
-_find /etc -size +50k -a -size -60k -exec ls -l {} \;_
+_find /etc -size +50k -a -size -60k -exec ls -l {} \;   -a为and的意思_
 
 _find /usr/bin /usr/sbin -perm /7000 -exec ls -l {} \;_
 
