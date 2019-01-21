@@ -32,11 +32,11 @@ find usage：find \[PATH\] \[option\] \[action\]，下面为option详情。
 
 ![](/assets/find相关的时间参数意义.png)
 
-_find /var -mtime -4_
+_find /var -mtime -4_
 
-_find /var -mtime +4_
+_find /var -mtime +4_
 
-_find /var -mtime 4_
+_find /var -mtime 4_
 
 _find /etc -newer /etc/passwd_
 
