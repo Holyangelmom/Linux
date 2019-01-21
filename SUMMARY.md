@@ -11,4 +11,7 @@
   * [1.文件隐藏属性（chattr/lsattr）](linuxwen-jian-he-mu-lu-guan-li/chattrpei-zhi-wen-jian-yin-cang-shu-xing.md)
   * [2.文件特殊权限： SUID, SGID, SBIT](linuxwen-jian-he-mu-lu-guan-li/2wen-jian-te-shu-quan-xian-ff1a-suid-sgid-sbit.md)
   * [3.文件查找](linuxwen-jian-he-mu-lu-guan-li/3wen-jian-cha-zhao.md)
+* [Linux磁盘与文件系统](linuxci-pan-yu-wen-jian-xi-tong.md)
+  * [1.文件系统特性](linuxci-pan-yu-wen-jian-xi-tong/1wen-jian-xi-tong-te-xing.md)
+  * [2.Linux的Ext2文件系统](linuxci-pan-yu-wen-jian-xi-tong/2linuxdeext2-wen-jian-xi-tong.md)
 
