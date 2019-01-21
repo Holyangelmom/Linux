@@ -48,3 +48,29 @@ _find /home -user dmtsai_
 
 _find / -nouser_
 
+##### （3）、与文件名及权限相关的选项
+
+![](/assets/与文件名及权限相关的选项.png)
+
+_find /home -name test_
+
+_find /home -name "\*passwd\*"_
+
+_find / -size +100M_
+
+_find /var -type s_
+
+_find /usr/bin /usr/sbin -perm /6000_
+
+_find /usr/bin /usr/sbin -perm /7000 -exec ls -l {} \;_
+
+find 的特殊功能就是能够进行额外的动作\(action\)。我们将最后一个例子以图解来说明如下：
+
+![](/assets/find额外的动作.png)
+
+* {}代表的是『由 find 找到的内容』，如上图所示，find 的结果会被放置到 {} 位置中；
+* -exec 一直到 \; 是关键词，代表 find 额外动作的开始 \(-exec\) 到结束 \(\;\) ，在这中间的就是 find 指令内的额外动作。 在本例中就是『 ls -l {} 』啰！
+* 『 ; 』在 bash 环境下是有特殊意义的，因此利用反斜杠来跳脱。
+
+
+
