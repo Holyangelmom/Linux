@@ -66,6 +66,8 @@ _find /etc -size +50k -a -size -60k -exec ls -l {} \;   -a为and的意思_
 
 _find /etc -size +50k -a ! -user root -exec ls -ld {} \;    ! 为非的意思_
 
+_find /etc -size +1500k -o -size 0                             -o为或的意思_
+
 _find /usr/bin /usr/sbin -perm /7000 -exec ls -l {} \;_
 
 find 的特殊功能就是能够进行额外的动作\(action\)。我们将最后一个例子以图解来说明如下：
