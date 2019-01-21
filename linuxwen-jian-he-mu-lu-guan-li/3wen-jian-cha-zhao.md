@@ -40,3 +40,11 @@ _find /var -mtime 4_
 
 _find /etc -newer /etc/passwd_
 
+##### （2）、与使用者或组别相关的选项
+
+![](/assets/与使用者或组名相关的选项.png)
+
+_find /home -user dmtsai_
+
+_find / -nouser_
+
