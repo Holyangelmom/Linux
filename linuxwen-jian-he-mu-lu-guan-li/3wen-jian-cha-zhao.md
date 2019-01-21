@@ -22,5 +22,23 @@ locate从已建立的数据库 /var/lib/mlocate/文件中查找文件，但数�
 
 ![](/assets/locate usage.png)
 
+### 4、find查找硬盘文件
+
+find usage：find \[PATH\] \[option\] \[action\]，下面为option详情。
+
+##### （1）、与时间有关的选项
+
+![](/assets/与时间相关的选项.png)
+
+![](/assets/find相关的时间参数意义.png)
+
+_find /var -mtime -4_
+
+_find /var -mtime +4_
+
+_find /var -mtime 4_
+
+_find /etc -newer /etc/passwd_
+
 
 
