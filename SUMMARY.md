@@ -14,4 +14,7 @@
 * [Linux磁盘与文件系统](linuxci-pan-yu-wen-jian-xi-tong.md)
   * [1.文件系统特性](linuxci-pan-yu-wen-jian-xi-tong/1wen-jian-xi-tong-te-xing.md)
   * [2.Linux的Ext2文件系统](linuxci-pan-yu-wen-jian-xi-tong/2linuxdeext2-wen-jian-xi-tong.md)
+  * [3.磁盘与目录容量：df，du](linuxci-pan-yu-wen-jian-xi-tong/3ci-pan-yu-mu-lu-rong-liang-ff1a-df-du.md)
+  * [4.观察磁盘分区状态：lsblk，blkid，parted](linuxci-pan-yu-wen-jian-xi-tong/4guan-cha-ci-pan-fen-qu-zhuang-tai.md)
+* [遗留问题](yi-liu-wen-ti.md)
 
