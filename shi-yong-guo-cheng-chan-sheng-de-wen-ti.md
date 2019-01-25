@@ -11,9 +11,9 @@ rm -f /var/run/yum.pid
 ### 2、xxx is not in the sudoers file.This incident will be reported.
 
 1. 切换到root用户下
-2. 添加sudo文件的写权限：_chmod u+w /etc/sudoers   _
-3. 编辑sudoers文件   _vi /etc/sudoers   _，找到这行 root ALL=\(ALL\) ALL,在他下面添加xxx ALL=\(ALL\) ALL \(这里的xxx是你的用户名\)
-4.  撤销sudoers文件写权限：_chmod u-w /etc/sudoers   _
+2. 添加sudo文件的写权限：\_chmod u+w /etc/sudoers
+3. 编辑sudoers文件：vi /etc/sudoers，找到这行 root ALL=\(ALL\) ALL,在他下面添加xxx ALL=\(ALL\) ALL \(这里的xxx是你的用户名\)
+4. 撤销sudoers文件写权限：chmod u-w /etc/sudoers
 
 
 
