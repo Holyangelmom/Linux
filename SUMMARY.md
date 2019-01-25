@@ -17,6 +17,7 @@
   * [3.磁盘与目录容量：df，du](linuxci-pan-yu-wen-jian-xi-tong/3ci-pan-yu-mu-lu-rong-liang-ff1a-df-du.md)
   * [4.观察磁盘分区状态：lsblk，blkid，parted](linuxci-pan-yu-wen-jian-xi-tong/4guan-cha-ci-pan-fen-qu-zhuang-tai.md)
   * [5.磁盘分区及格式化：fdisk，gdisk，mkfs](linuxci-pan-yu-wen-jian-xi-tong/5ci-pan-fen-qu-ff1a-fdisk-gdisk.md)
+  * [7.文件系统校验：xfs\_repair， fsck.ext4](linuxci-pan-yu-wen-jian-xi-tong/7wen-jian-xi-tong-xiao-yan-ff1a-xfs-repair-fsck-ext4.md)
+* 7.文件系统校验
 * [遗留问题](yi-liu-wen-ti.md)
-* [简单问题](shi-yong-guo-cheng-chan-sheng-de-wen-ti.md)
 

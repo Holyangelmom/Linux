@@ -2,21 +2,21 @@
 
 ### 1、前言
 
-对磁盘进行分区，可使用fdisk或gdisk，但是要注意的是：**MBR 分区表请使用 fdisk 分区， GPT 分区表请使用 gdisk 分区！**
+对磁盘进行分区，可使用fdisk或gdisk，但是要注意的是：**MBR 分区表请使用 fdisk 分区， GPT 分区表请使用 gdisk 分区！要想使用一个磁盘要经理三个主要步骤：分区、格式化、挂载。**
 
 ### 2、gdisk，mkfs
 
-（1）、查看分区表，确定使用gdisk还是fdisk
+##### （1）、查看分区表，确定使用gdisk还是fdisk
 
-sudo parted -l
+_sudo parted -l_
 
 **因为使用gpt进行分区，所以不会有MBR的分区限制！**
 
 ![](/assets/查看分区表.png)
 
-（2）、查看硬盘sda是否有剩余的容量
+##### （2）、查看硬盘sda是否有剩余的容量
 
-sudo gdisk /dev/sda
+_sudo gdisk /dev/sda_
 
 发现剩余容量14G
 
@@ -24,7 +24,7 @@ sudo gdisk /dev/sda
 
 ![](/assets/查看剩余容量2.png)
 
-（3）、新增分区
+##### （3）、新增分区
 
 增加以下三个分区：
 
@@ -46,7 +46,7 @@ sudo gdisk /dev/sda
 
 ![](/assets/写入分区.png)
 
-（4）、查看新增分区是否生效
+##### （4）、查看新增分区是否生效
 
 因为核心还没有更新，因此没有新增的分区。两种方法处理：一是重启，二是使用partprobe指令更新核心。下面使用partprobe更新。
 
@@ -56,17 +56,17 @@ sudo gdisk /dev/sda
 
 ![](/assets/打印分区号.png)
 
-查看更新是否生效：cat /proc/partitions
+查看更新是否生效：_cat /proc/partitions_
 
 ![](/assets/查看更新是否生效.png)
 
 ![](/assets/查看更新是否生效2.png)
 
-（5）、尝试删除第6分区
+##### （5）、尝试删除第6分区
 
 ![](/assets/删除分区.png)
 
-（6）、文件系统格式化
+##### （6）、文件系统格式化
 
 分区成功后需要文件系统格式化，可使用mkfs，也可输入mkfs后按下tab键查看其它命令。
 
@@ -88,11 +88,15 @@ sudo gdisk /dev/sda
 
 ![](/assets/dumpe2fs错误提示.png)
 
-再使用xfs_growfs查看文件系统详情：sudo xfs_\_growfs /dev/sda4
+再使用xfs\_growfs查看文件系统详情_：sudo xfs\_growfs /dev/sda4_
 
 可以看到以下错误提示，是因为刚刚格式化的sda4并没有挂载到Linux目录中。
 
 ![](/assets/xfs_growfs错误提示.png)
+
+##### （7）、文件系统挂载
+
+见《Linux磁盘与文件系统》第六篇《6.文件系统挂载与卸载》
 
 ### 3、fdisk，mkfs
 
