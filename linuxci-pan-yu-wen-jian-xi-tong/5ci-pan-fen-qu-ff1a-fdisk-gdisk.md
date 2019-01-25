@@ -1,5 +1,11 @@
 # 磁盘分区及格式化：fdisk，gdisk，mkfs
 
+### 目录
+
+1. 前言
+2. gdisk，mkfs
+3. fdisk，mkfs
+
 ### 1、前言
 
 对磁盘进行分区，可使用fdisk或gdisk，但是要注意的是：**MBR 分区表请使用 fdisk 分区， GPT 分区表请使用 gdisk 分区！要想使用一个磁盘要经理三个主要步骤：分区、格式化、挂载。**
