@@ -10,6 +10,8 @@
 
 sudo parted -l
 
+**因为使用gpt进行分区，所以不会有MBR的分区限制！**
+
 ![](/assets/查看分区表.png)
 
 （2）、查看硬盘sda是否有剩余的容量
@@ -60,11 +62,39 @@ sudo gdisk /dev/sda
 
 ![](/assets/查看更新是否生效2.png)
 
-（5）、分区后需要进行文件系统格式化
+（5）、尝试删除第6分区
 
+![](/assets/删除分区.png)
 
+（6）、文件系统格式化
 
-### 3、fdisk
+分区成功后需要文件系统格式化，可使用mkfs，也可输入mkfs后按下tab键查看其它命令。
+
+格式化/dev/sda4：_sudo mkfs.xfs /dev/sda4_
+
+![](/assets/格式化sda4.png)
+
+![](/assets/格式化sda4-2.png)
+
+格式化/dev/sda5：_mkfs -t vfat /dev/sda5_
+
+![](/assets/格式化sda5.png)
+
+![](/assets/格式化sda5-2.png)
+
+使用dumpe2fs查看文件系统：_sudo dumpe2fs -h /dev/sda4_
+
+可以看到以下错误提示，是因为dumpe2fs仅可以查看ext2/ext3/ext4文件系统，不支持xfs。
+
+![](/assets/dumpe2fs错误提示.png)
+
+再使用xfs_growfs查看文件系统详情：sudo xfs_\_growfs /dev/sda4
+
+可以看到以下错误提示，是因为刚刚格式化的sda4并没有挂载到Linux目录中。
+
+![](/assets/xfs_growfs错误提示.png)
+
+### 3、fdisk，mkfs
 
 （预留）
 

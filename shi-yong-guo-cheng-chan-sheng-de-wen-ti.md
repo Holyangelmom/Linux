@@ -21,3 +21,5 @@ rm -f /var/run/yum.pid
 
 ![](/assets/终端启动快捷键.png)
 
+
+
