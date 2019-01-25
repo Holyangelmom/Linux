@@ -15,5 +15,9 @@ rm -f /var/run/yum.pid
 3. 编辑sudoers文件：vi /etc/sudoers，找到这行 root ALL=\(ALL\) ALL,在他下面添加xxx ALL=\(ALL\) ALL \(这里的xxx是你的用户名\)
 4. 撤销sudoers文件写权限：chmod u-w /etc/sudoers
 
+### 3、centos7增加启动终端快捷键
 
+点击系统工具-》设置-》设备-》键盘，点击增加，输入快捷项名称和命令：
+
+![](/assets/终端启动快捷键.png)
 
