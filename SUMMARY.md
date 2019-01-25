@@ -18,4 +18,5 @@
   * [4.观察磁盘分区状态：lsblk，blkid，parted](linuxci-pan-yu-wen-jian-xi-tong/4guan-cha-ci-pan-fen-qu-zhuang-tai.md)
   * [5.磁盘分区：fdisk，gdisk](linuxci-pan-yu-wen-jian-xi-tong/5ci-pan-fen-qu-ff1a-fdisk-gdisk.md)
 * [遗留问题](yi-liu-wen-ti.md)
+* [简单问题](shi-yong-guo-cheng-chan-sheng-de-wen-ti.md)
 
