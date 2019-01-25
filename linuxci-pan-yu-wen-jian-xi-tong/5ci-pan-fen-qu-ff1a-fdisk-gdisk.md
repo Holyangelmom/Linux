@@ -1,10 +1,10 @@
-# 磁盘分区：fdisk，gdisk
+# 磁盘分区及格式化：fdisk，gdisk，mkfs
 
 ### 1、前言
 
 对磁盘进行分区，可使用fdisk或gdisk，但是要注意的是：**MBR 分区表请使用 fdisk 分区， GPT 分区表请使用 gdisk 分区！**
 
-### 2、gdisk
+### 2、gdisk，mkfs
 
 （1）、查看分区表，确定使用gdisk还是fdisk
 
@@ -60,19 +60,11 @@ sudo gdisk /dev/sda
 
 ![](/assets/查看更新是否生效2.png)
 
+（5）、分区后需要进行文件系统格式化
+
 
 
 ### 3、fdisk
 
 （预留）
-
-
-
-
-
-
-
-
-
-
 
