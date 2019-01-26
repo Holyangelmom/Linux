@@ -26,6 +26,8 @@
 
 ![](/assets/挂载sda4.png)
 
+到这里装置已经可以使用了，但是还需要让系统开机时自动挂载，详情见见《Linux磁盘与文件系统》第八篇《8.设定开机挂载》
+
 ### 3、umount \(将装置文件卸除\)
 
 ![](/assets/umount usage.png)![](/assets/umount例子.png)
