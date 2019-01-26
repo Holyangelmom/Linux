@@ -1,6 +1,12 @@
 # 文件系统挂载与卸除
 
-1、前言
+### 目录
+
+1. 前言
+2. 挂载 xfs/ext4/vfat 等文件系统
+3. umount \(将装置文件卸除\)
+
+### 1、前言
 
 挂载点是目录， 而这个目录是进入磁盘分区槽\(其实是文件系统啦！\)的入口就是了。不过要进行挂载前，你最好先确定几件事：
 
@@ -12,7 +18,7 @@
 
 下边是挂载指令mount usage：
 
-![](/assets/mount usage.png)2、挂载 xfs/ext4/vfat 等文件系统
+### ![](/assets/mount usage.png)2、挂载 xfs/ext4/vfat 等文件系统
 
 使用blkid找出刚刚格式化的分区，再使用mount挂载，前提是挂载点（目录）是事先创建好的空目录（最好是）。
 
@@ -20,5 +26,7 @@
 
 ![](/assets/挂载sda4.png)
 
+### 3、umount \(将装置文件卸除\)
 
+![](/assets/umount usage.png)![](/assets/umount例子.png)
 
