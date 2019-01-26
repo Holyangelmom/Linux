@@ -56,3 +56,7 @@ _sudo umount /dev/sda5_
 
 ![](/assets/写入/etc/fstab.png)最后用 mount命令挂载 fstab 中的所有文件系统：mount -a，若写入数据有误系统会提示。改正后即可reboot。over！装置可以使用啦！
 
+**但是，万一发生你在 /etc/fstab 输入的数据错误，导致无法顺利开机成功，而进入单人维护模式当中，那时候的/ 可是 read only 的状态，当然你就无法修改 /etc/fstab ，也无法更新 /etc/mtab 啰～那怎么办？没关系，可以利用底下这一招：**
+
+_**mount -n -o remount,rw /**_
+
