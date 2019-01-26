@@ -16,7 +16,9 @@
 
 使用blkid找出刚刚格式化的分区，再使用mount挂载，前提是挂载点（目录）是事先创建好的空目录（最好是）。
 
-![](/assets/挂载xfs文件系统.png)
+![](/assets/挂载xfs文件系统.png)下面挂载刚刚格式化好的分区/dev/sda4
+
+![](/assets/挂载sda4.png)
 
 
 
