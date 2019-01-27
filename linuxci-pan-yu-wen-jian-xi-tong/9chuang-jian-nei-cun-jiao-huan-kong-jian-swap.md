@@ -1,6 +1,6 @@
 # 创建内存交换空间swap
 
-1、前言
+### 1、前言
 
 以前的年代因为内存不足，因此那个可以暂时将内存的程序拿到硬盘中暂放的内存置换空间 \\(swap\\)就显的非常的重要！ 否则，如果突然间某支程序用掉你大部分的内存，那你的系统恐怕有损毁的情况发生喔！所以，早期在安装 Linux 之前，大家常常会告诉你： 安装时一定需要的两个 partition ，一个是根目录，另外一个就是 swap\\(内存置换空间\\)。
 
@@ -13,7 +13,7 @@
 * 设定一个 swap partition
 * 建立一个虚拟内存的文件
 
-2、使用实体分区槽建置 swap
+### 2、使用实体分区槽建置 swap
 
 建立 swap 分区槽的方式也是非常的简单的！透过底下几个步骤就搞定啰：
 
@@ -24,7 +24,7 @@
 
 下面试验一下：
 
-（1）、建立分区
+##### （1）、建立分区
 
 查看分区表，确定使用gdisk还是fdisk
 
@@ -48,21 +48,21 @@ _sudo gdisk /dev/sda_
 
 ![](/assets/更新核心.png)
 
-（2）、格式化swap分区
+##### （2）、格式化swap分区
 
-格式化：mkswap /dev/sda6
+格式化：_mkswap /dev/sda6_
 
 ![](/assets/格式化swap分区.png)
 
-查看格式化是否成功：sudo blkid \|grep sda6
+查看格式化是否成功：_sudo blkid \|grep sda6_
 
 ![](/assets/查看swap是否格式化成功.png)查看swap空间是否增加：free -h，发现还是1G。
 
 ![](/assets/查看swap是否增加.png)
 
-（3）、启动swap装置
+##### （3）、启动swap装置
 
-swapon /dev/sda6
+_sudo swapon /dev/sda6_
 
 ![](/assets/启动swap装置.png)
 
@@ -70,17 +70,43 @@ swapon /dev/sda6
 
 ![](/assets/再次查看swap空间.png)
 
-（4）、写入开机挂载文件/etc/fstab
+##### （4）、写入开机挂载文件/etc/fstab
 
-先卸载刚挂载的swap：sudo swapoff /dev/off
+先卸载刚挂载的swap：_sudo swapoff /dev/off_
 
 ![](/assets/卸载swap.png)
 
 写入/etc/fstab，第二列挂载点则写swap，因为swap没有挂载点。不过我试验的第一次竟然报错，提示找不到UUID=XXX，第二次却成功。（脑瓜疼）
 
-![](/assets/swap写入/etc/fstab.png)最后测试写入文件是否正确：sudo swapon -a
+![](/assets/swap写入/etc/fstab.png)最后测试写入文件是否正确：_sudo swapon -a_
 
 ![](/assets/测试swap是否正确写入文件.png)
 
-3、使用文件建置 swap
+### 3、使用文件建置 swap
+
+（1）、创建大文件
+
+dd if=/dev/zero of=/tmp/swap bs=1M count=128
+
+![](/assets/创建大型文件.png)
+
+（2）、格式化大文件
+
+mkswap /tmp/swap
+
+![](/assets/格式化大文件.png)
+
+（3）、启动swap装置
+
+sudo swapon /tmp/swap
+
+![](/assets/启动大型文件创建的swap装置.png)
+
+（4）、设置自动挂载
+
+先卸载swap：sudo swapoff /tmp/swap
+
+在写入/etc/fstab：
+
+![](/assets/自动挂载swap.png)
 

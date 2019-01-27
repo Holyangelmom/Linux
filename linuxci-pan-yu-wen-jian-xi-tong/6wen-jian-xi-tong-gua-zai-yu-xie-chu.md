@@ -65,7 +65,9 @@ _mount -o loop /srv/loopdev /mnt_
 
 编辑/etc/fstab设置开机自动挂载，这里的options列需要设置额外添加“loop”选项。
 
-![](/assets/loop设备自动挂载.png)再卸载装置进行测试是否正确
+![](/assets/loop装置自动挂载.png)
+
+再卸载装置进行测试是否正确
 
 _sudo umount /mnt_
 
