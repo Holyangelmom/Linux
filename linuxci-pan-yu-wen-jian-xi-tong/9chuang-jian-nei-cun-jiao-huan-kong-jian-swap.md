@@ -76,7 +76,7 @@ swapon /dev/sda6
 
 ![](/assets/卸载swap.png)
 
-写入/etc/fstab，第二列挂载点则写swap，因为swap没有挂载点。不过我试验的第一次竟然报错，提示找不到UUID=XXX，第二次却成功。脑瓜疼
+写入/etc/fstab，第二列挂载点则写swap，因为swap没有挂载点。不过我试验的第一次竟然报错，提示找不到UUID=XXX，第二次却成功。（脑瓜疼）
 
 ![](/assets/swap写入/etc/fstab.png)最后测试写入文件是否正确：sudo swapon -a
 
