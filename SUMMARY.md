@@ -2,6 +2,8 @@
 
 * [Introduction](README.md)
 * [常用命令](chapter1.md)
+* [简单问题](7wen-jian-xi-tong-xiao-yan.md)
+* [遗留问题](yi-liu-wen-ti.md)
 * [虚拟机安装VMwareTools](xu-ni-ji-an-zhuang-vmwaretools.md)
 * [虚拟机挂载安装时所用的ISO镜像](xu-ni-ji-gua-zai-jing-xiang.md)
 * [Linux目录配置](linuxmu-lu-pei-zhi.md)
@@ -21,6 +23,4 @@
   * [7.文件系统校验：xfs\_repair， fsck.ext4](linuxci-pan-yu-wen-jian-xi-tong/7wen-jian-xi-tong-xiao-yan-ff1a-xfs-repair-fsck-ext4.md)
   * [8.设定开机挂载](linuxci-pan-yu-wen-jian-xi-tong/8she-ding-kai-ji-gua-zai.md)
   * [9.创建内存交换空间swap](linuxci-pan-yu-wen-jian-xi-tong/9chuang-jian-nei-cun-jiao-huan-kong-jian-swap.md)
-* [简单问题](7wen-jian-xi-tong-xiao-yan.md)
-* [遗留问题](yi-liu-wen-ti.md)
 
