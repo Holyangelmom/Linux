@@ -74,9 +74,21 @@ swapon /dev/sda6
 
 （4）、写入开机挂载文件/etc/fstab
 
+先卸载刚挂载的swap：sudo swapoff /dev/off
+
+![](/assets/卸载swap.png)
+
+
+
 写入/etc/fstab，第二列挂载点则写swap，因为swap没有挂载点
 
-![](/assets/swap写入/etc/fstab.png)
+![](/assets/swap写入/etc/fstab.png)最后测试写入文件是否正确：sudo swapon -a
+
+![](/assets/测试swap是否正确写入文件.png)
+
+
+
+3、使用文件建置 swap
 
 
 
