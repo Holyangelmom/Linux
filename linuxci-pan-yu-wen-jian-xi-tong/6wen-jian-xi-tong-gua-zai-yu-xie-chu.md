@@ -32,3 +32,35 @@
 
 ![](/assets/umount usage.png)![](/assets/umount例子.png)
 
+### 4、特殊装置 loop 挂载（常用于建立大文件以制作 loop 装置文件）
+
+##### （1）、挂载DVD/光盘影像文件
+
+（预留）
+
+##### （2）、建立大文件以制作 loop 装置文件
+
+如果当初在分区时， 你只有分区出一个根目录，假设你已经没有多余的容量可以进行额外的分区的！偏偏根目录的容量还很大！ 此时你就能够制作出一个大文件，然后将这个文件挂载！如此一来感觉上你就多了一个分区槽啰！下面进行试验。
+
+使用dd指令建立大文件：_dd if=/dev/zero of=/srv/loopdev bs=1M count=512_
+
+![](/assets/建立大文件.png)
+
+格式化大文件，可以先df查看文件系统类型再决定用哪种格式化命令，这里直接用mkfs.ext4进行格式化并查看结果：
+
+_sudo mkfs.ext4 /srv/loodev_
+
+_blkid /srv/loopdev_
+
+![](/assets/格式化大型文件.png)
+
+![](/assets/查看格式化大文件结果.png)
+
+挂载
+
+_mount -o loop /srv/loopdev /mnt_
+
+![](/assets/挂载loop装置.png)
+
+
+
