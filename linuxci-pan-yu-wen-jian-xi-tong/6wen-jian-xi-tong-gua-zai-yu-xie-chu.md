@@ -5,6 +5,7 @@
 1. 前言
 2. 挂载 xfs/ext4/vfat 等文件系统
 3. umount \(将装置文件卸除\)
+4. 特殊装置 loop 挂载（常用于建立大文件以制作 loop 装置文件）
 
 ### 1、前言
 
@@ -71,6 +72,4 @@ _sudo umount /mnt_
 _sudo mount -a_
 
 ![](/assets/测试开机挂载loop.png)
-
-
 
