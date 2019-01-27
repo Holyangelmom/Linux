@@ -86,27 +86,27 @@ _sudo swapon /dev/sda6_
 
 ### 3、使用文件建置 swap
 
-（1）、创建大文件
+##### （1）、创建大文件
 
-dd if=/dev/zero of=/tmp/swap bs=1M count=128
+_dd if=/dev/zero of=/tmp/swap bs=1M count=128_
 
 ![](/assets/创建大型文件.png)
 
-（2）、格式化大文件
+##### （2）、格式化大文件
 
-mkswap /tmp/swap
+_mkswap /tmp/swap_
 
 ![](/assets/格式化大文件.png)
 
-（3）、启动swap装置
+##### （3）、启动swap装置
 
-sudo swapon /tmp/swap
+_sudo swapon /tmp/swap_
 
 ![](/assets/启动大型文件创建的swap装置.png)
 
-（4）、设置自动挂载
+##### （4）、设置自动挂载
 
-先卸载swap：sudo swapoff /tmp/swap
+先卸载swap：_sudo swapoff /tmp/swap_
 
 再写入/etc/fstab。第一列：为何这里不要使用 UUID 呢？这是因为系统仅会查询成组设备 \(block device\) 不会查询文件！所以，这里千万不要使用 UUID，不然系统会查不到喔！第二列挂载点为swap！
 
