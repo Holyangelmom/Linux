@@ -65,7 +65,7 @@ _mount -o loop /srv/loopdev /mnt_
 
 编辑/etc/fstab设置开机自动挂载，这里的options列需要设置额外添加“loop”选项。
 
-![](/assets/loop装置自动挂载.png)
+![](/assets/loop装置自动挂载.png)（PS：毕竟系统大多仅查询 block device 去找出 UUID 而已，因此使用文件建置的 filesystem，最好还是使用原本的档名来处理，应该比较不容易出现错误讯息的！）
 
 再卸载装置进行测试是否正确
 
