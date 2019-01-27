@@ -72,3 +72,11 @@ swapon /dev/sda6
 
 ![](/assets/再次查看swap空间.png)
 
+（4）、写入开机挂载文件/etc/fstab
+
+写入/etc/fstab，第二列挂载点则写swap，因为swap没有挂载点
+
+![](/assets/swap写入/etc/fstab.png)
+
+
+
