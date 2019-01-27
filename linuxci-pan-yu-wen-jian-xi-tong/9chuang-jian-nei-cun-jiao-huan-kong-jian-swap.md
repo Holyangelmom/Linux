@@ -106,7 +106,7 @@ sudo swapon /tmp/swap
 
 先卸载swap：sudo swapoff /tmp/swap
 
-在写入/etc/fstab：
+再写入/etc/fstab。第一列：为何这里不要使用 UUID 呢？这是因为系统仅会查询成组设备 \(block device\) 不会查询文件！所以，这里千万不要使用 UUID，不然系统会查不到喔！第二列挂载点为swap！
 
 ![](/assets/自动挂载swap.png)
 
