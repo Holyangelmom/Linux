@@ -20,6 +20,7 @@
   * [6.文件系统挂载与卸除：mount，umount](linuxci-pan-yu-wen-jian-xi-tong/6wen-jian-xi-tong-gua-zai-yu-xie-chu.md)
   * [7.文件系统校验：xfs\_repair， fsck.ext4](linuxci-pan-yu-wen-jian-xi-tong/7wen-jian-xi-tong-xiao-yan-ff1a-xfs-repair-fsck-ext4.md)
   * [8.设定开机挂载](linuxci-pan-yu-wen-jian-xi-tong/8she-ding-kai-ji-gua-zai.md)
+  * [9.创建内存交换空间swap](linuxci-pan-yu-wen-jian-xi-tong/9chuang-jian-nei-cun-jiao-huan-kong-jian-swap.md)
 * [简单问题](7wen-jian-xi-tong-xiao-yan.md)
 * [遗留问题](yi-liu-wen-ti.md)
 
