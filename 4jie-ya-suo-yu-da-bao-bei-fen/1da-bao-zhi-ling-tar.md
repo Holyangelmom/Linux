@@ -1,3 +1,7 @@
+# 打包指令tar
+
+
+
 ### 1.tar指令详情
 
 ![](/assets/tar usage.png)
@@ -23,13 +27,19 @@ _find /etc -newer /etc/passwd_
 _tar -jcv -f /root/etc.newer.then.passwd.tar.bz2 \  
 --newer-mtime="2015/06/17" /etc/\*_
 
+### 
+
+
+
 ### 4.特殊应用：利用管线命令与数据流
 
 将 /etc 整个目录一边打包一边在 /tmp 解开（你可以将 - 想成是在内存中的一个装置\(缓冲区\)）
 
 _tar -cvf - /etc \| tar -xvf -_
 
-### 5.解压后的SELinux问题
+### 5.备份系统及还原
+
+### 6.解压后的SELinux问题
 
 如果因为某些缘故，所以你的系统必须要以备份的数据来回填到原本的系统中，那么得要特别注意复原后的系统的 SELinux 问题！它可能会让你的系统无法存取某些配置文件内容，导致影响到系统的正常使用权。
 
