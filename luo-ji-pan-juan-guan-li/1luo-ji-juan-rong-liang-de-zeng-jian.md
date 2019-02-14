@@ -28,5 +28,11 @@ _xfs\_growfs /dev/centos00/root_
 
 ![](/assets/xfs_growfs同步lvm扩容.png)
 
-2.LVM扩容（分配磁盘空间）
+df -h查看，已从5G变成8G
+
+![](/assets/lvm扩容结果.png)
+
+### 2.LVM扩容（分配磁盘空间）
+
+
 
