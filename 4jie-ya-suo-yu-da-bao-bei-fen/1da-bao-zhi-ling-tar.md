@@ -55,13 +55,13 @@ _tar -xvpz -f backup.tgz -C /_
 
 （4）、别忘了重新创建那些在备份时被排除在外的目录
 
-mkdir proc
+_mkdir proc_
 
-mkdir lost+found
+_mkdir lost+found_
 
-mkdir mnt
+_mkdir mnt_
 
-mkdir sys
+_mkdir sys_
 
 ### 6.解压后的SELinux问题
 
