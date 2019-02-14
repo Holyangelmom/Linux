@@ -23,4 +23,6 @@
   * [3.7.文件系统校验：xfs\_repair， fsck.ext4](linuxci-pan-yu-wen-jian-xi-tong/7wen-jian-xi-tong-xiao-yan-ff1a-xfs-repair-fsck-ext4.md)
   * [3.8.设定开机挂载](linuxci-pan-yu-wen-jian-xi-tong/8she-ding-kai-ji-gua-zai.md)
   * [3.9.创建内存交换空间swap](linuxci-pan-yu-wen-jian-xi-tong/9chuang-jian-nei-cun-jiao-huan-kong-jian-swap.md)
+* [4.解压缩与打包备份](4jie-ya-suo-yu-da-bao-bei-fen.md)
+  * [1.打包指令tar](4jie-ya-suo-yu-da-bao-bei-fen/1da-bao-zhi-ling-tar.md)
 
