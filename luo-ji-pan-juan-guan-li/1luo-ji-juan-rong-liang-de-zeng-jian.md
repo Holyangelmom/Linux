@@ -24,5 +24,9 @@ _lvextend -L +3G /dev/centos00/root_
 
 ![](/assets/xfs系统使用resize2fs同步lvm.png)
 
+_xfs\_growfs /dev/centos00/root_
+
+![](/assets/xfs_growfs同步lvm扩容.png)
+
 2.LVM扩容（分配磁盘空间）
 
