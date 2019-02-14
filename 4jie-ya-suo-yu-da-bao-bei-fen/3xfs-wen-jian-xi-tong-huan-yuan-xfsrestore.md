@@ -22,5 +22,5 @@ _xfsrestore -f /srv/boot.dump1 /boot_
 
 **（3）仅还原部分文件的 xfsrestore 互动模式**
 
-预留...
+预留......
 
