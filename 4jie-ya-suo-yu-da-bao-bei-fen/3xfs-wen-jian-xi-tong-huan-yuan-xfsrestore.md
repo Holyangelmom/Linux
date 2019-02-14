@@ -12,7 +12,7 @@ _xfsrestore -f /srv/boot.dump -L boot\_all /boot_
 
 直接复原的结果就是『同名的文件会被覆盖，其他系统内新的文件会被保留』喔！
 
-**选择性还原部分文件**：_xfsrestore -f /srv/boot.dump -L boot\_all -s grub2 /tmp/boot2_
+**可以选择性还原部分文件**：_xfsrestore -f /srv/boot.dump -L boot\_all -s grub2 /tmp/boot2_
 
 （2）还原增量备份文件
 
