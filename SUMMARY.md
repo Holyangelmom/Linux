@@ -26,4 +26,5 @@
 * [4.解压缩与备份还原](4jie-ya-suo-yu-da-bao-bei-fen.md)
   * [1.打包指令tar](4jie-ya-suo-yu-da-bao-bei-fen/1da-bao-zhi-ling-tar.md)
   * [2.XFS 文件系统备份 xfsdump](4jie-ya-suo-yu-da-bao-bei-fen/2xfs-wen-jian-xi-tong-bei-fen-xfsdump.md)
+  * [3.XFS 文件系统还原 xfsrestore](4jie-ya-suo-yu-da-bao-bei-fen/3xfs-wen-jian-xi-tong-huan-yuan-xfsrestore.md)
 

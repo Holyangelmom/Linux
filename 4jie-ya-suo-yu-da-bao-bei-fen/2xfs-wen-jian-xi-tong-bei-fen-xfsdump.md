@@ -1,5 +1,12 @@
 # XFS 文件系统备份 xfsdump
 
+### 目录
+
+1. 简介
+2. xfsdump简单使用
+3. 用 xfsdump 备份完整的文件系统
+4. 用 xfsdump 进行累积备份 \(Incremental backups\)
+
 ### 1.简介
 
 其实 xfsdump 的功能颇强！他除了可以进行文件系统的完整备份 \(full backup\) 之外，还可以进行累积备份 \(Incremental backup\) 喔！ 用一张简图来说明累积备份 。
@@ -24,13 +31,13 @@
 
 ![](/assets/查看/boot是否是独立的文件系统.png)
 
-（2）将完整备份的文件名记录成为 /srv/boot.dump 
+（2）将完整备份的文件名记录成为 /srv/boot.dump
 
 _xfsdump -l 0 -L boot\_all -M boot\_all -f /srv/boot.dump /boot_
 
 ![](/assets/xfsump执行备份.png)
 
-这样很简单的就建立起来 /srv/boot.dump 文件，该文件将整个 /boot/ 文件系统都备份下来了！ 并且将备份的相关信息 \(文件系统/时间/session ID 等等\) 写入 /var/lib/xfsdump/inventory 中，准备让下次备份时可以作为一个参考依据。 
+这样很简单的就建立起来 /srv/boot.dump 文件，该文件将整个 /boot/ 文件系统都备份下来了！ 并且将备份的相关信息 \(文件系统/时间/session ID 等等\) 写入 /var/lib/xfsdump/inventory 中，准备让下次备份时可以作为一个参考依据。
 
 ### 4.用 xfsdump 进行累积备份 \(Incremental backups\)
 
@@ -51,6 +58,4 @@ _xfsdump -l 1 -L boot\_2 -M boot\_2 -f /srv/boot.dump1 /boot_
 boot.dump1的大小确实是刚刚新增的10M
 
 ![](/assets/查看xfsdump level2备份.png)
-
-
 
