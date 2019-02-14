@@ -1,7 +1,5 @@
 # 打包指令tar
 
-
-
 ### 1.tar指令详情
 
 ![](/assets/tar usage.png)
@@ -27,10 +25,6 @@ _find /etc -newer /etc/passwd_
 _tar -jcv -f /root/etc.newer.then.passwd.tar.bz2 \  
 --newer-mtime="2015/06/17" /etc/\*_
 
-### 
-
-
-
 ### 4.特殊应用：利用管线命令与数据流
 
 将 /etc 整个目录一边打包一边在 /tmp 解开（你可以将 - 想成是在内存中的一个装置\(缓冲区\)）
@@ -38,6 +32,32 @@ _tar -jcv -f /root/etc.newer.then.passwd.tar.bz2 \
 _tar -cvf - /etc \| tar -xvf -_
 
 ### 5.备份系统及还原
+
+（1）、建立备份目录并设置权限（也可以备份到网盘或者U盘）
+
+_mkdir /backups_
+
+_chmod 700 /backups_
+
+_ll -d /backups_
+
+（2）、有些目录是无用的，例如“/proc”、“/lost+ found”（Ubuntu特有文件夹）、“/sys”。当然，“backup.gz”这个档案文件本身必须排除在外，否则你可能会得到一些超出常理的结果。如果不把“/mnt”排 除在外，那么挂载在“/mnt”上的其它分区也会被备份。另外需要确认一下“/media”上没有挂载任何东西\(例如光盘、移动硬盘\)，如果有挂载东西， 必须把“/media”也排除在外。下边执行备份：
+
+_tar -cvpz -f /backups/backup.tgz --exclude=/proc \_
+
+_--exclude=/lost+found --exclude=/backup.tgz \_
+
+_ --exclude=/mnt --exclude=/sys \_
+
+_/_
+
+（3）、还原
+
+_tar -xvpz -f backup.tgz -C /_
+
+（4）、别忘了重新创建那些在备份时被排除在外的目录：
+
+
 
 ### 6.解压后的SELinux问题
 
