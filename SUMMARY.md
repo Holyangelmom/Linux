@@ -25,4 +25,5 @@
   * [3.9.创建内存交换空间swap](linuxci-pan-yu-wen-jian-xi-tong/9chuang-jian-nei-cun-jiao-huan-kong-jian-swap.md)
 * [4.解压缩与备份还原](4jie-ya-suo-yu-da-bao-bei-fen.md)
   * [1.打包指令tar](4jie-ya-suo-yu-da-bao-bei-fen/1da-bao-zhi-ling-tar.md)
+  * [2.XFS 文件系统备份 xfsdump](4jie-ya-suo-yu-da-bao-bei-fen/2xfs-wen-jian-xi-tong-bei-fen-xfsdump.md)
 
