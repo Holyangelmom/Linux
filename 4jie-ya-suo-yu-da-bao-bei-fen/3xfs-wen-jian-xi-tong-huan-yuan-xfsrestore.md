@@ -6,6 +6,8 @@
 
 （1）简单复原 level 0 的文件系统
 
+执行指令：
+
 _xfsrestore -f /srv/boot.dump -L boot\_all /boot_
 
 直接复原的结果就是『同名的文件会被覆盖，其他系统内新的文件会被保留』喔！
