@@ -35,11 +35,9 @@ _tar -cvf - /etc \| tar -xvf -_
 
 （1）、建立备份目录并设置权限（也可以备份到网盘或者U盘）
 
-_mkdir /backups_
-
-_chmod 700 /backups_
-
-_ll -d /backups_
+_mkdir /backups  
+chmod 700 /backups  
+ll -d /backups_
 
 （2）、有些目录是无用的，例如“/proc”、“/lost+ found”（Ubuntu特有文件夹）、“/sys”。当然，“backup.gz”这个档案文件本身必须排除在外，否则你可能会得到一些超出常理的结果。如果不把“/mnt”排 除在外，那么挂载在“/mnt”上的其它分区也会被备份。另外需要确认一下“/media”上没有挂载任何东西\(例如光盘、移动硬盘\)，如果有挂载东西， 必须把“/media”也排除在外。下边执行备份：
 
@@ -55,9 +53,15 @@ _/_
 
 _tar -xvpz -f backup.tgz -C /_
 
-（4）、别忘了重新创建那些在备份时被排除在外的目录：
+（4）、别忘了重新创建那些在备份时被排除在外的目录
 
+mkdir proc
 
+mkdir lost+found
+
+mkdir mnt
+
+mkdir sys
 
 ### 6.解压后的SELinux问题
 
