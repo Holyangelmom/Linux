@@ -34,9 +34,9 @@ _dd if=/dev/sda of=/dev/sdb_
 
 cpio 可以备份任何东西，包括装置设备文件。不过 cpio 有个大问题， 那就是 cpio 不会主动的去找文件来备份！cpio 得要配合类似 find 等可以找到文件名的指令来告知 cpio 该被备份的数据在哪里啊！ 虽然cpio 好像不怎么好用呦！但是，他可是备份的时候的一项利器呢！因为他可以备份任何的文件，包括 /dev 底下的任何装置文件！
 
-（1）cpio usage
+**（1）cpio usage**
 
-![](/assets/cpio usage.png)（2）备份boot（必要时切换至root）
+![](/assets/cpio usage.png)**（2）备份boot（必要时切换至root）**
 
 我们先进入/，再进行备份。因为cpio不会理会你给的是绝对路径还是相对路径的文件名，所以如果你加上绝对路径的 / 开头,那么未来解开的时候，它就一定会覆盖掉原本的 /boot 耶！那就太危险了！这个我们在 tar 也稍微讲过那个 -P 的选项！！理解吧！
 
@@ -50,13 +50,13 @@ _cd /root_
 
 _cpio -iducv &lt; /tmp/boot.cpio_
 
-（3）备份全部文件到磁带机（必要时切换至root）
+**（3）备份全部文件到磁带机（必要时切换至root）**
 
-find / \| cpio -oBcv &gt; /dev/st0
+_find / \| cpio -oBcv &gt; /dev/st0_
 
 解压到/：
 
-cd /
+_cd /_
 
-cpio -idcv &lt; /dev/st0
+_cpio -idcv &lt; /dev/st0_
 
