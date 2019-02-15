@@ -29,6 +29,8 @@
   * [3.XFS 文件系统还原 xfsrestore](4jie-ya-suo-yu-da-bao-bei-fen/3xfs-wen-jian-xi-tong-huan-yuan-xfsrestore.md)
   * [4.其他常见的压缩与备份工具：dd，cpio](4jie-ya-suo-yu-da-bao-bei-fen/4qi-ta-chang-jian-de-ya-suo-yu-bei-fen-gong-ju.md)
   * [5.光盘写入工具：mkisofs，cdrecord](4jie-ya-suo-yu-da-bao-bei-fen/guang-pan-xie-ru-gong-ju.md)
+* [5.BASH](5shell.md)
+  * [1.认识bash这个shell](5shell/1ren-shi-bash-zhe-ge-shell.md)
 * [逻辑卷LVM管理](luo-ji-pan-juan-guan-li.md)
   * [1.逻辑卷容量的增减](luo-ji-pan-juan-guan-li/1luo-ji-juan-rong-liang-de-zeng-jian.md)
 
