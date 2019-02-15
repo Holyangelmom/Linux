@@ -44,7 +44,7 @@ _cd /_
 
 _find boot \| cpio -oBvc &gt; /tmp/boot.cpio_
 
-解压：
+解压到/tmp：
 
 _cd /root_
 
@@ -54,7 +54,7 @@ _cpio -iducv &lt; /tmp/boot.cpio_
 
 find / \| cpio -oBcv &gt; /dev/st0
 
-解压：
+解压到/：
 
 cd /
 
