@@ -33,4 +33,6 @@
   * [1.认识bash这个shell](5shell/1ren-shi-bash-zhe-ge-shell.md)
 * [逻辑卷LVM管理](luo-ji-pan-juan-guan-li.md)
   * [1.逻辑卷容量的增减](luo-ji-pan-juan-guan-li/1luo-ji-juan-rong-liang-de-zeng-jian.md)
+* [零碎知识点](ling-sui-zhi-shi-dian.md)
+  * [1.TCP握手](ling-sui-zhi-shi-dian/1tcpwo-shou.md)
 
